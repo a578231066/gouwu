@@ -1,0 +1,360 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.7.29
+    最新更新:2017.7.31
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间: 
+*/
+body{background: #F7F3F7;}
+/* 头部 */
+header{width: 100%; height: 96px; background: url(../images/个人中心/myTopBg.jpg) no-repeat; background-size: 100%;}
+header ul{width: 90%; margin: 0 auto;}
+header li{ width: 32%; height: 96px; line-height: 96px; color:#fff; font-size: 1.4em; float: left; letter-spacing: 2px;}
+header li img{width: 60px; height: 60px; border-radius:40px;}
+
+/* 内容部分 */
+.main .dingdan{width: 100%; height: 130px; background: #fff;}
+.main .dingdan .top ul{ height: 40px; line-height: 40px; padding: 0 10px; border-bottom:1px solid #F3F1F3; letter-spacing: 1px;}
+.main .dingdan .top li.fl{font-size: 1.3em; color: #353535; font-weight: 500;}
+.main .dingdan .top li.fr a{ color: #878787; font-size: 1.1em;}
+
+.main .dingdan .down{width: 100%; height: 100px;}
+.main .dingdan .down li{ width: 15%; margin-left: 4%; margin-top: 20px; float: left; text-align: center;}
+.main .dingdan .down li img{width: 40px; height: 30px;}
+.main .dingdan .down li p{color: #414141; font-size: 1.1em; margin-top: 5px;}
+
+/* 消息 */
+.main .xiaoxi{width: 100%; height: 40px; border-top:1px solid #F2F2F2;}
+.main .xiaoxi .news{width: 100%; height: 40px; line-height: 40px; background: #fff;}
+.main .xiaoxi .news li.fl{width: 80%; color: #2D2D2D; font-size: 1.2em; margin-left: 4%; float: left;}
+.main .xiaoxi .news li.fr{ padding-right: 4%; font-size: 1.2em; color: #B0B0B0;}
+
+/* 设置 */
+.main .shezhi{height: 375px;}
+.main .shezhi ul{ margin-top: 8px;}
+.main .shezhi li{width: 100%; height: 50px; line-height: 50px; padding-left: 5%; background: #fff; font-size: 1.2em;}
+.main .shezhi li img{width: 20px; height: 20px;}
+.main .shezhi li.two img{width: 20px; height: 25px;}
+.main .shezhi li span{ margin-left: 10px; color: #151915;}
+.main .shezhi li span.fr{ font-size: 1em; padding-top: 15px; padding-right: 4%; color: #B0B0B0;}
+.main .shezhi li.none{border:none;}
+
+/* 消息1 */
+.main .xiaoxi1{width: 100%; height: 230px; margin-bottom:60px;}
+.main .xiaoxi1 .news1{width: 100%; height: 230px; background: #fff;}
+.main .xiaoxi1 .news1 a{ color: #111511;}
+.main .xiaoxi1 .news1 li{width: 20%; padding: 8px 0; border-bottom:1px solid #F4F4F4; float: left; text-align: center;}
+.main .xiaoxi1 .news1 li p{ color:#838383; padding-top: 10px;}
+.main .xiaoxi1 .news1 li img{width: 30px; height: 30px;}
+
+/* footer */
+footer{width: 100%; height: 60px; border-top:1px solid #F4F2F4; background: #fff; position: fixed; bottom: 0; z-index: 10;}
+footer ul li{ float: left; width: 20%; text-align: center; font-size: 1em; padding-top: 10px;}
+footer ul li span{ font-size: 2em;}
+footer ul li a{ color: #636563;}
+footer ul li.home a{ color: #E72C21;}
+
+
+/* 遮挡 */
+.zhedang{width: 100%; position:fixed; top: 0; left: 0; background: #fff; z-index: 100; display: none;}
+.zhedang p{height: 50px; line-height: 50px; text-align: center; letter-spacing: 1px; color: #313131; font-size: 1.4em; border-bottom:1px solid #EEEEEE;}
+.zhedang p span{ font-size: 1em; color: #5E5E5E; padding-left: 10px; padding-top: 15px;}
+.zhedang .zhedang_banner{ width: 100%; height: 108px; background: url(../images/dengluBg.jpg) no-repeat; background-size: 100%; text-align: center; line-height: 128px; border-bottom:1px solid #F7F7F7;}
+.zhedang .zhedang_banner img{width: 70px; height: 28px;}
+
+/* tab */
+.zhedang #tab{width: 90%; margin-left:5%; margin-top: 10px;}
+.zhedang #tab_top{width: 100%;}
+.zhedang #tab_top li{width: 50%; line-height: 40px; text-align: center; cursor: pointer; float: left; letter-spacing: 1px; font-size: 1.2em; border-bottom:3px solid #DADADA;}
+.zhedang #tab_top li.active{ color: #EA1850; border-bottom:3px solid #E70043;}
+
+/*内容*/
+.zhedang #tab_main{width: 100%; padding-top: 50px;}
+.zhedang #tab_main li{width: 100%; height: 300px; display: none;}
+.zhedang #tab_main li div.inp{width: 100%; height: 36px; line-height: 35px; border-bottom:1px solid #F8F8F8;}
+.zhedang #tab_main li div.inp span{display: inline-block; width: 10%; text-align: center; color: #BEBEBE;}
+.zhedang #tab_main li div.inp input{width: 90%; height: 35px; border:none;}
+.zhedang #tab_main li div.inp1{ height: 40px; margin-top: 10px;}
+.zhedang #tab_main li div.inp1 input{width: 48%;}
+.zhedang #tab_main li div.inp1 button{ width: 110px; height: 25px; line-height: 20px; background: #F9F9F9; border:1px solid #EAEAEA; border-radius: 40px; color: #AFAFAF;}
+.zhedang #tab_main li div.an{width: 100%; height: 40px; margin-top: 20px;}
+.zhedang #tab_main li div.an button{width: 100%; height: 40px; letter-spacing: 4px; font-size: 1.4em; background: #E50043; color: #F7AFAD; border:none; border-radius:4px;}
+.zhedang #tab_main li div.size{width: 100%; height: 30px; line-height: 30px;}
+.zhedang #tab_main li div.size span.fl a{ color: #E30344;}
+.zhedang #tab_main li div.size span.fr a{ color: #222328;}
+
+/* 第三方登录 */
+.zhedang div.down{width: 100%; height: 120px; text-align: center; position: fixed; bottom:0; left: 0;}
+.zhedang div.down p{ height: 20px; border-bottom:1px solid #F7F7F7;}
+.zhedang div.down .down_top{ margin-top: -10px; font-size: 1.2em; color: #585858;}
+.zhedang div.down .down_top span{ background: #fff;}
+.zhedang div.down .down_down span{display: inline-block; float: left; width: 60px; height: 60px; line-height: 55px; text-align: center; border:1px solid #f00; border-radius: 100%; margin-left: 35px; margin-top: 20px;}
+.zhedang div.down .down_down span img{ width: 60%;}
+.zhedang div.down .down_down span.wx{ border-color: #9BD6B2;}
+.zhedang div.down .down_down span.qq{ border-color: #92C1D2;}
+.zhedang div.down .down_down span.xl{ border-color: #DBAFA9;}
+.zhedang #tab_main li.active{display: block;}
+
+/* 手机内容 */
+.shouji{width: 80%; height: 30px; line-height: 30px; background: rgba(0,0,0,.5); position:fixed; bottom:100px; left:10%; color: #fff; text-align: center; border-radius: 5px; font-size: 1.2em; display: none; z-index: 99999;}
+
+/* 验证码 */
+.yanzheng_zd{width: 100%; background: rgba(0,0,0,.4); position:fixed; top: 0; left: 0; z-index: 1099; display: none;}
+.yanzheng{width: 80%; height: 50px; background: #fff; border-radius:5px; position: fixed; top: 200px; left: 10%; z-index: 1100; display: none;}
+.yanzheng input{width: 50%; height: 50px;}
+.yanzheng img{width: 50%; height: 50px; margin-top: -4px;}
+
+
+/* 手机分辨率兼容 */
+/* S5 */
+@media(min-width:360px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 45px;}
+}
+
+/* iPhone6 */
+@media(min-width:375px){
+    header li{ width: 28%;font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 50px;}
+}
+
+/* 412 */
+@media(min-width:412px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 57px;}
+}
+
+/* iPhone6 Plus */
+@media(min-width:414px){
+    header li{ width: 26%; font-size: 1.8em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 60px;}
+}
+
+/* 455px */
+@media(min-width:455px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 70px;}
+}
+
+/* 470px */
+@media(min-width:470px){
+
+}
+
+/* 500px */
+@media(min-width:500px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 80px;}
+}
+
+/* 530px */
+@media(min-width:530px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 88px;}
+}
+
+/* 556px */
+@media(min-width:556px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 92px;}
+}
+
+/* iphone5横屏 */
+@media(min-width:568px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 95px;}
+}
+
+/* 580 */
+@media(min-width:580px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 98px;}
+}
+
+/* 600px */
+@media(min-width:600px){
+    header li{ width: 18%; font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 105px;}
+}
+
+/* S5横屏 */
+@media(min-width:640px){
+    header li{ width: 18%; font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 115px;}
+}
+
+/* iPhone6横屏 */
+@media(min-width:667px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 120px;}
+}
+
+/* 690px */
+@media(min-width:690px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 128px;}
+}
+
+/* 710px */
+@media(min-width:710px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 132px;}
+}
+
+/* 715px */
+@media(min-width:715px){
+
+}
+
+/* Nexus6P横屏 */
+@media(min-width:732px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 138px;}
+}
+
+/* iPad */
+@media(min-width:768px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 150px;}
+}
+
+/* 786px */
+@media(min-width:786px){
+
+}
+
+/* 800px */
+@media(min-width:800px){
+    header li{ width: 14%; font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 155px;}
+}
+
+/* 830px */
+@media(min-width:830px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 160px;}
+}
+
+/* 870px */
+@media(min-width:870px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 170px;}
+}
+
+/* 910px */
+@media(min-width:910px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 180px;}
+}
+
+/* 950px */
+@media(min-width:950px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 190px;}
+}
+
+/* 995px */
+@media(min-width:995px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 200px;}
+}
+
+/* iPad横屏 */
+@media(min-width:1024px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 210px;}
+}
+
+/* 1080px */
+@media(min-width:1080px){
+    header li{ width: 12%; font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 225px;}
+}
+
+/* 1120px */
+@media(min-width:1120px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 235px;}
+}
+
+/* 1160px */
+@media(min-width:1160px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 245px;}
+}
+
+/* 1200px */
+@media(min-width:1200px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 255px;}
+}
+
+/* 1240px */
+@media(min-width:1240px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 265px;}
+}
+
+/* 1290px */
+@media(min-width:1290px){
+    header li{ width: 14%; font-size: 1.6em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 278px;}
+}
+
+/* 1330px */
+@media(min-width:1330px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 288px;}
+}
+
+/* 1366px */
+@media(min-width:1366px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 295px;}
+}
+
+/* 1370px */
+@media(min-width:1370px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 298px;}
+}
+
+/* 1410px */
+@media(min-width:1410px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 308px;}
+}
+
+/* 1450px */
+@media(min-width:1450px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 316px;}
+}
+
+/* 1500px */
+@media(min-width:1500px){
+    header li{ width: 8%; font-size: 1.8em;}
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 328px;}
+}
+
+/* 1540px */
+@media(min-width:1540px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 338px;}
+}
+
+/* 1580px */
+@media(min-width:1580px){
+/* 第三方 */
+    .zhedang div.down .down_down span{margin-left: 348px;}
+}
