@@ -1,0 +1,32 @@
+/*
+    项目负责人：赵强
+    项目创建日期:2017.8.16
+    最新更新:2017.8.16
+    修改人员:赵强
+    修改日期:
+    修改原因:
+    修改代码行数区间:
+*/
+/* 头部 */
+header{width: 100%; height: 50px; background: #fff;}
+header div{width: 90%; height: 50px; padding-top: 15px; font-size: 1.4em; text-align: center; margin:0 auto; color: #313031;}
+header div span{ color: #525D65; font-size: 1.2em;}
+header div span.fr{font-size: 0.7em;}
+
+/* 内容 */
+.main{width: 100%; height: 520px; background: url(../images/youhuiBg.jpg) no-repeat; background-size: 100%; position:relative;}
+.main .but button{ width: 50%; height: 30px; color: #fff; letter-spacing: 1px; text-shadow: 1px 1px 1px #000; font-size: 1.1em; border-radius:30px; background: url(../images/buttonBg.jpg) repeat-x; background-size:100%; border:none; position: absolute; font-weight: 700; top: 320px; left: 25%;}
+
+/* 底部文字 */
+.footer{width: 100%; height: 500px; padding-top: 20px; background: #FFD773;}
+.footer .footer_top{width: 100%; height: 30px; line-height: 25px; color: #8E4200; font-size: 1.2em; font-weight: 700; background: url(../images/youhuiSizeBg.jpg) no-repeat 3px; background-size:100%; text-align: center;}
+.footer .footer_down{width: 90%; margin:0 auto;}
+.footer .footer_down p{margin-top:10px; color: #944500;}
+
+
+
+
+
+
+
+
